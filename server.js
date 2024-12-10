@@ -4,7 +4,10 @@ const cors = require("cors")
 const bodyParser = require("body-parser")
 require("dotenv").config()
 
-app.use(cors())
+app.use(cors({
+    origin: "https://acity-pulse.vercel.app",
+    credentials: true
+}))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 
