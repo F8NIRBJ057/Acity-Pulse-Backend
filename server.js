@@ -16,6 +16,14 @@ const eventRoutes = require("./routes/eventsRoutes")
 app.use("/api/auth",authRoutes)
 app.use("/api/events",eventRoutes)
 
+app.use((req, res, next) => {
+    console.log(`${req.method} ${req.path}`, {
+      body: req.body,
+      auth: req.headers.authorization
+    });
+    next();
+  });
+
 const PORT = process.env.PORT || 3000
 
 app.get("/",(req,res)=>{
