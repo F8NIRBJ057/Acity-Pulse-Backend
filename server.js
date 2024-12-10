@@ -5,7 +5,7 @@ const bodyParser = require("body-parser")
 require("dotenv").config()
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:5173",
+    origin: process.env.FRONTEND_URL || "https://acity-pulse.vercel.app",
     credentials: true
 }))
 app.use(bodyParser.json())
