@@ -15,7 +15,7 @@ const eventRoutes = require("./routes/eventsRoutes")
 app.use("/api/auth",authRoutes)
 app.use("/api/events",eventRoutes)
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 app.get("/",(req,res)=>{
     res.send("Welcome to Maureen's Server")
