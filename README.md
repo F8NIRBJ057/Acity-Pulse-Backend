@@ -84,9 +84,9 @@ The following images illustrate the various API endpoints available in the backe
 
 - **Authentication Endpoints**:
   - ![Register Endpoint](Endpoint-Images/Registering-a-new-User.png)
-  - ![Login Endpoint](Endpoint-Images/Login.png)
+  
 
 - **Event Management Endpoints**:
   - ![All Events Endpoint](Endpoint-Images/Get-All-Events.png)
   - ![Create Event Endpoint](Endpoint-Images/Create-An-Event.png)
-  - ![Confirm RSVP Endpoint](Endpoint-Images/Confirming-an-RSVP.png)
+  
